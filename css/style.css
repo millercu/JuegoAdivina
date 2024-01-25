@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-image: url("/JuegoAdivina/img/fondo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+img{
+    max-width: 40%;
+    display: block;  
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__contenido {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.container__informaciones {
+    flex: 1;
+    padding: 20px;
+}
+.container_text{
+    border-radius: 16px;
+    width: 80%;
+    padding: 16px 24px;
+    color: black;
+    font-weight: 700;
+    margin-top: 20px ;
+}
+.container__boton {
+    border-radius: 16px;
+    background: #1875E8;
+    padding: 16px 24px;
+    width: 40%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin: 16px 0 15px 0;
+}
+.container__boton:hover{
+    cursor: pointer;
+}
+
+.container__texto {
+    margin: 16 0 16px 0;
+}
+
+.container__texto-azul {
+    color: #1875E8;
+    font-size: 22px;
+}
+.vidas{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+h2,
+p,
+button, h3, h4 {
+    font-family: 'Inter', sans-serif;
+}
+
+h2, h4 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h3{
+    color: #1875E8;
+}
+
+p{
+    font-size: 28px;
+}

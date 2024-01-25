@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Adivina el numero</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <img src="./img/fondoArriba.png" alt="luffy" class="container__imagen-luffy" />
+            <div class="container__informaciones">
+                <h1>Adivina el numero secreto</h1>
+                <h2><span class="container__texto-azul">Las opciones van desde el 1 hasta el 100, GOOD LUCK!!</span></h2>
+                <div class="vidas">
+                    <p>Tienes 5 intentos para descubrir el numero secreto</p>
+                    <p id="vida"></p>
+                </div>
+                
+                <div id="form"> 
+                    <input type="number"  placeholder="Ingresa un numero" id="resultado" class="container_text" min="0" max="100" required>
+                    <button type="submit" onclick="capturar()" id="boton" class="container__boton">Enviar</button>
+                    <button type="submit" onclick="reiniciar()" id="boton_reiniciar" class="container__boton">Reiniciar</button>
+                </div>
+                 <div class="container__texto">
+                    <h2><span class="container__texto-azul ganar"></span></h2>
+                    <h2><span class="container__texto-azul perder"></span></h2>
+                    <h3 class="ganar"></h3>
+                    <h3 class="perder"></h3>
+                    <h4 class="mayorMenor"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
